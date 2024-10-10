@@ -1,0 +1,30 @@
+.main-index {
+    background-image: url('../img/Banners/planeta.png');
+    background-size: cover;
+
+}
+
+h1 {
+    color: beige;
+}
+
+.main-index p {
+    color: beige;
+}
+
+.back {
+    background-color: black;
+
+
+}
+.fondo {
+    background-color: black;
+}
+
+.tarjetas {
+    background-image: url('../img/Banners/wp6763106.webp');
+}
+
+.nav-link{
+    color: yellow;
+}

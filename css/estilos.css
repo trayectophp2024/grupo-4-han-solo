@@ -3,6 +3,9 @@
     background-size: cover;
 
 }
+.letras{
+    color: rgb(216, 231, 6);
+}
 
 h1 {
     color: beige;
@@ -28,3 +31,29 @@ h1 {
 .nav-link{
     color: yellow;
 }
+
+.busqueda{
+    background-color: black;
+}
+
+.cuidado{
+    background-color: rgb(255, 0, 0);
+}
+
+.nosotros{
+    background-color: black;
+   color: rgb(71, 71, 252);
+}
+
+.creditos{
+    color: rgb(0, 153, 153);
+    
+
+}
+
+.US{
+    background-image: url('../img/Banners/planeta.png');
+    background-size: cover;
+    color: rgb(226, 211, 2);
+}
+

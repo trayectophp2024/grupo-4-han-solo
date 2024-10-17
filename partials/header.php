@@ -125,12 +125,12 @@
           <a class="nav-link " aria-current="page" href="producto.php?categoria=personajes""></a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">NOSOTROS</a>
+          <a class="nav-link" href="nosotros.php">NOSOTROS</a>
         </li>
 
        
       </ul>
-      <form action="busqueda.php" method="POST" class="d-flex" role="search">
+      <form action="busqueda.php" method="GET" class="d-flex" role="search">
       <div class="input-group">
         <span class="input-group-text">
 

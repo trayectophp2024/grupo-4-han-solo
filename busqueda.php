@@ -20,7 +20,7 @@ if ($termino_busqueda) {
 
 <?php require "partials/header.php" ?>
 
-<main class="container">
+<main class="busqueda p-5">
     <h1 class="text-center">Resultados de la busqueda</h1>
 
     <?php if ($termino_busqueda && !empty($productos)) { ?>
@@ -28,11 +28,11 @@ if ($termino_busqueda) {
             <?php foreach ($productos as $producto) { ?>
                 <div class="col-4 mt-4 mb-4">
                     <div class="card" style="width: 18rem;">
-                        <img src="img/<?=$producto ['imagen']?>" class="card-img-top" alt="">
+                        <img src="img/<?=$producto ['Imagen']?>" class="card-img-top" alt="">
                         <div class="card-body">
-                            <h5 class="card-title"><?=$producto ['nombre']?></h5>
-                            <h5 class="card-title text-succes"><?=$producto ['precio']?></h5>
-                            <a href="producto_particular.php?categorias=<?= $producto['tabla'] ?>&id=<?= $producto['id'] ?>" class="btn btn-primary">Ver</a>
+                            <h5 class="card-title"><?=$producto ['Nombre']?></h5>
+                            <h5 class="card-title text-succes"><?=$producto ['Descripcion']?></h5>
+                            <a href="<?= $producto['tabla'] ?>.php?categorias=<?= $producto['tabla'] ?>&id=<?= $producto['id'] ?>" class="btn btn-primary">Ver Mas</a>
 
                         </div>
  

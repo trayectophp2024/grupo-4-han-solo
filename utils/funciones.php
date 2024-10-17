@@ -43,18 +43,18 @@ function listar_todo($coon,$tabla){
 
     //consulta para buscar en figuras
 
-    $sqlPersonajes = "SELECT 'personajes' as tabla,id,nombre,descripcion,especie,afiliacion,planeta_natal,habilidades,arma,actor,imagen FROM personajes
+    $sqlPersonajes = "SELECT 'personajes' as tabla,id,Nombre,Descripcion,Especie,Afiliacion,Planeta_natal,Habilidades,Arma,Actor,Imagen FROM personajes
         WHERE LOWER(nombre) LIKE '%$termino_busqueda%'
     ";
-    $sqlnaves = "SELECT 'naves' as tabla,id,nombre,descripcion,tipo,,fabricante,longitud,velocidad_maxima,armamento,capacidad,imagen FROM naves
-        WHERE LOWER(nombre) LIKE '%$termino_busqueda%'
-    ";
-
-    $sqlsables = "SELECT 'sables' as tabla,id,nombre,descripcion,color,propietario,afiliacion,cristal,imagen FROM sables
+    $sqlnaves = "SELECT 'naves' as tabla,id,Nombre,Descripcion,Tipo,Fabricante,Longitud,Velocidad_maxima,Armamento,Capacidad,Imagen FROM naves
         WHERE LOWER(nombre) LIKE '%$termino_busqueda%'
     ";
 
-    $sqlpeliculas = "SELECT 'peliculas' as tabla,id,titulo,episodio,descripcion,director,año_estreno,duracion,imagen FROM peliculas
+    $sqlsables = "SELECT 'sables' as tabla,id,Nombre,Descripcion,Color,Propietario,Afiliacion,Cristal,Imagen FROM sables
+        WHERE LOWER(nombre) LIKE '%$termino_busqueda%'
+    ";
+
+    $sqlpeliculas = "SELECT 'peliculas' as tabla,id,Nombre,Episodio,Descripcion,Director,Año_estreno,Duracion,Imagen FROM peliculas
     WHERE LOWER(nombre) LIKE '%$termino_busqueda%'
     ";
 
@@ -65,13 +65,13 @@ function listar_todo($coon,$tabla){
         $resultPersonajes = $conn->query($sqlPersonajes)->fetch_all(MYSQLI_ASSOC);
         $resultNaves = $conn->query($sqlnaves)->fetch_all(MYSQLI_ASSOC);
         $resultSables = $conn->query($sqlsables)->fetch_all(MYSQLI_ASSOC);
-        $resultpeliculas = $conn->query($sqlsables)->fetch_all(MYSQLI_ASSOC);
+        $resultpeliculas = $conn->query($sqlpeliculas)->fetch_all(MYSQLI_ASSOC);
 
 
         // combinar los resultados de las tres tablas
 
 
-        $resultado = array_merge($resultPersonajes,$resultNaves,$resultSables);
+        $resultado = array_merge($resultPersonajes,$resultNaves,$resultSables,$resultpeliculas);
         
         return $resultado;
 

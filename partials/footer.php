@@ -1,4 +1,4 @@
-<footer class="bg-primary  bg-dark border-bottom border-body" data-bs-theme="dark">">
+<footer class="bg-dark border-bottom " >
         <p class="py-4 text-center text-white">&copy; los derechos reservados</p>
 
 

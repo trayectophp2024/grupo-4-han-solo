@@ -35,7 +35,7 @@ $categorias = listar_todo($conn, $tabla);
 <div class="fondo">
     <div class=" d-flex justify-content-center p-5">
 
-        <div class="col-6 mb-3">
+        <div class="col-6 ">
 
 
 

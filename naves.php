@@ -22,7 +22,7 @@ $producto = $productos[0] ?? NULL
  
     <?php foreach ($productos as $producto) { ?>
 
-        <div class="card mb-3 mx-auto mt-5 bg-warning" style="max-width: 740px;">
+        <div class="card  mx-auto  bg-warning" style="max-width: 740px;">
             <div class="row g-0">
                 <div class="col-md-6">
                     <img src="img/<?= $producto['Imagen'] ?>" class="img-fluid rounded-start" alt="...">

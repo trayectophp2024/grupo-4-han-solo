@@ -32,7 +32,7 @@ $categorias = listar_todo($conn, $tabla);
 ?>
 
 <?php require "partials/header.php" ?>
-<div class="fondo">
+<div class="fondo ">
     <div class=" d-flex justify-content-center p-5">
 
         <div class="col-6 ">

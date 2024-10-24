@@ -1,7 +1,7 @@
 <?php
 
 require_once "utils/funciones.php";
-require_once "utils/db_connections.php"; 
+require_once "utils/db_connections.php";
 
 
 $tabla = $_GET['categorias'] ?? FALSE;
@@ -19,12 +19,12 @@ $producto = $productos[0] ?? NULL
 
 <main class="tarjetas">
 
- 
-    <?php foreach ($productos as $producto) { ?>
 
-        <div class="card  mx-auto  bg-warning " style="max-width: 740px;">
+    <?php foreach ($productos as $producto) { ?>
+        <div class="p-5">
+        <div class="card  mx-auto  bg-warning p-4" style="max-width: 740px;">
             <div class="row g-0">
-                <div class="col-md-6">
+                <div class="col-md-6 p-4">
                     <img src="img/<?= $producto['Imagen'] ?>" class="img-fluid rounded-start" alt="...">
                 </div>
                 <div class="col-md-6">
@@ -36,11 +36,12 @@ $producto = $productos[0] ?? NULL
                         <p class="card-text fs-6">Habilidades : <?= $producto['Habilidades'] ?></p>
                         <p class="card-text fs-7">Arma : <?= $producto['Arma'] ?></p>
                         <p class="card-text fs-4">Actor : <?= $producto['Actor'] ?></p>
-                     
-                       
+
+
                     </div>
                 </div>
             </div>
+        </div>
         </div>
 
 

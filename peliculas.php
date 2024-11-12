@@ -34,7 +34,7 @@ $producto = $productos[0] ?? NULL
                         <p class="card-text fs-5">Episodio : <?= $producto['Episodio'] ?></p>
                         <p class="card-text fs-6">Director : <?= $producto['Director'] ?></p>
                         <p class="card-text fs-6">Estreno : <?= $producto['Año_Estreno'] ?></p>
-                        <p class="card-text fs-7">Duracion : <?= $producto['Duracion'] ?></p>
+                        <p class="card-text fs-7">Duracion : <?= $producto['Duracion'] ?> min</p>
 
 
                     </div>

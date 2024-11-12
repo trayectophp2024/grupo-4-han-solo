@@ -10,7 +10,7 @@
 
 
     <div class="creditos col-4 text-center p-4">
-      <h2>Somos un grupo entusiaste de alumnos de AMdelco administrando una pagina de la saga STAR WAR en donde acceder a info,juegos,noticias y toda la data que te interesa de este UNIVERSO</h2>
+    <h2>Somos un grupo entusiasta de alumnos de AMdelCO administrando una página de la saga STAR WAR en donde podrás acceder a info , juegos , noticias y toda la data que te interesa de este UNIVERSO</h2>
       <br>
 
       <img width="300px" src="img/Banners/wp6763106.webp" alt="">
@@ -20,6 +20,7 @@
 
       <div class="text-center p-5"><br>
         <h2>Diseño</h2>
+        <h2></h2>
         <h4>Lara Devoto</h4>
         <h4>Siomara Picoy </h4><br>
         <h2>Tester</h2>

@@ -141,8 +141,8 @@
                     <i class="fa-solid fa-magnifying-glass"></i>
 
                   </span>
-                  <input class="form-control " name="q" type="search" placeholder="Search" aria-label="Search">
-                  <button class="boton-color" type="submit">Buscar</button>
+                  <input class="form-control " name="q" type="search" placeholder="Search" aria-label="Search" maxlength="25">
+                  <button class="boton-color" type="submit" >Buscar</button>
 
                 </div>
 

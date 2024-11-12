@@ -7,10 +7,10 @@
   <div class="d-flex mb-3 ">
     
 
-    <a href="https://www.instagram.com/"> <div class="text-white p-2 fa-brands fa-instagram"></div></a>
-    <a href="https://mail.google.com/mail/"> <div class="text-white p-2 fa-regular fa-envelope"></div></a>
-    <a href="https://twitter.com/?lang=en"><div class="text-white p-2 fa-brands fa-x-twitter"></div></a>
-    <a href="https://www.twitch.tv/"><div class="text-white p-2 fa-brands fa-twitch"></div></a>
+    <a target="_blank" href="https://www.instagram.com/"> <div class="text-white p-2 fa-brands fa-instagram"></div></a>
+    <a target="_blank" href="https://mail.google.com/mail/"> <div class="text-white p-2 fa-regular fa-envelope"></div></a>
+    <a target="_blank" href="https://twitter.com/?lang=en"><div class="text-white p-2 fa-brands fa-x-twitter"></div></a>
+    <a target="_blank" href="https://www.twitch.tv/"><div class="text-white p-2 fa-brands fa-twitch"></div></a>
   </div>
 
   </div>

@@ -16,6 +16,7 @@ if ($termino_busqueda) {
     $productos = buscar_productos($conn, $termino_busqueda);
 }
 
+
 ?>
 
 <?php require "partials/header.php" ?>
@@ -31,7 +32,7 @@ if ($termino_busqueda) {
                         <img src="img/<?=$producto ['Imagen']?>" class="card-img-top" alt="">
                         <div class="card-body">
                             <h5 class="card-title"><?=$producto ['Nombre']?></h5>
-                            <h5 class="card-title text-succes"><?=$producto ['Descripcion']?></h5>
+                      
                             <a href="<?= $producto['tabla'] ?>.php?categorias=<?= $producto['tabla'] ?>&id=<?= $producto['id'] ?>" class="btn btn-primary">Ver Mas</a>
 
                         </div>
@@ -46,7 +47,7 @@ if ($termino_busqueda) {
         </div>
 
     <?php }elseif($termino_busqueda) {?>
-        <p class="text-center text-warning fs-3"> No se encontraron productos para el termino busqueda:    <?=$termino_busqueda ?></p>
+        <p class="text-center text-warning fs-3"> No se encontraron items que coincidan con esta busqueda:    <?=$termino_busqueda ?></p>
         <?php }else { ?>
         <p class="text-center text-danger fs-3">El campo de busqueda no puede estar vacio</p>
 

@@ -1,0 +1,255 @@
+﻿BUG caso de prueba Búsqueda 1
+Título: Resultados de Búsqueda
+Tipo Funcional
+Gravedad: Media
+Ambiente:
+* Pc escritorio
+* Windows 10 pro
+* Google Chrome Version 130.0.6723.70
+Acción Realizada: 
+1. Acceder a la página principal
+2.  Hacer clic en el campo de búsqueda
+3. Ingresar “Han” 
+4. Apretar Enter
+Resultado esperado
+La web muestra los resultados encontrados, los cuales se presentan con una imagen y nombre del elemento buscado
+Resultado Real
+La web muestra los resultados encontrados, los cuales se presentan con una imagen y nombre del elemento buscado acompañados de la descripción entera del mismo
+Captura de pantalla
+  
+
+
+
+
+
+
+
+BUG caso de Prueba Búsqueda 2
+Título: Búsqueda de elementos inexistentes en la aplicación 
+Tipo Funcional
+Gravedad: Media
+Ambiente:
+* Pc escritorio
+* Windows 10 pro
+* Google Chrome Version 130.0.6723.70
+Acción Realizada: 
+5. Acceder a la página principal
+6.  Hacer clic en el campo de búsqueda
+7. Ingresar “H@n” 
+8. Apretar Enter
+Resultado esperado
+La web muestra el mensaje “No se encontraron resultados que coincidan con esta búsqueda” o algún mensaje similar
+Resultado Real
+La web muestra el mensaje  “No se encontraron productos para el término búsqueda: H@n”
+Captura de pantalla
+  
+
+
+
+
+
+
+
+
+
+BUG caso de Prueba Búsqueda 4
+Título: Búsqueda de espacio Vacío
+Tipo Funcional
+Gravedad: Media
+Ambiente:
+* Pc escritorio
+* Windows 10 pro
+* Google Chrome Version 130.0.6723.70
+Acción Realizada: 
+9. Acceder a la página principal
+10.  Hacer clic en el campo de búsqueda
+11. Apretar la tecla “espacio”
+12. Apretar la tecla “Enter”
+Resultado esperado
+La web muestra el mensaje “El campo de búsqueda no puede quedar vacío”
+Resultado Real
+La web carga como resultados todas las páginas que tienen un espacio en el título
+Captura de pantalla
+  
+
+  
+
+
+
+BUG caso de Prueba Búsqueda 5
+Título: Búsqueda de un string con más de 40  caracteres
+Tipo Funcional
+Gravedad: Media
+Ambiente:
+* Pc escritorio
+* Windows 10 pro
+* Google Chrome Version 130.0.6723.70
+Acción Realizada: 
+13. Acceder a la página principal
+14.  Hacer clic en el campo de búsqueda
+15. Ingresar un string de más de 40 caracteres
+16. Apretar Enter
+Resultado esperado
+La web muestra el mensaje “Ingrese un elemento de búsqueda de manos de 30 caracteres” o que haya un límite a la cantidad de caracteres que se puedan ingresar en una búsqueda
+Resultado Real
+La web muestra el mensaje  “No se encontraron productos para el término búsqueda: (string de mas de 30 caracteres)”
+Captura de pantalla
+  
+  
+
+
+
+BUG caso de prueba Redes Sociales 1
+Título: Redes sociales 
+Tipo Funcional
+Gravedad: Baja
+Ambiente:
+* Pc escritorio
+* Windows 10 pro
+* Google Chrome Version 130.0.6723.70
+Acción Realizada: 
+17. Acceder a la página principal
+18.  Hacer clic en el icono de alguna de las redes sociales 
+Resultado esperado
+Se abre la página de la red social seleccionada en una nueva pestaña
+
+
+Resultado Real
+Se abre la página de la red social seleccionada en la misma pestaña que en la que estaba la web de Star Wars
+Captura de pantalla
+  
+
+  
+
+BUG caso de prueba Personajes 3
+Título: Información de Personaje: Actor/Actriz
+Tipo Visual
+Gravedad: Baja
+Ambiente:
+* Pc escritorio
+* Windows 10 pro
+* Google Chrome Version 130.0.6723.70
+Acción Realizada: 
+19. Acceder a la sección Personajes de la aplicación web
+20.  Hacer clic en el botón “ver” debajo de la imagen de algún personaje
+Resultado esperado
+Se carga la pantalla de información de personaje sin errores de imagen y está el texto bien escrito.
+Resultado Real
+En la información del personaje solo dice actor en lugar de actor/actriz a pesar de que se trate de un personaje interpretado por una mujer. (Este error se repite para todas las páginas de la sección “Personajes”)
+Captura de pantalla
+  
+
+
+
+BUG caso de prueba Naves 3
+Título: Magnitudes de naves sin unidades de medida
+Tipo Visual
+Gravedad: Baja
+Ambiente:
+* Pc escritorio
+* Windows 10 pro
+* Google Chrome Version 130.0.6723.70
+Acción Realizada: 
+21. Acceder a la sección Naves de la aplicación web
+22.  Hacer clic en el botón “ver” debajo de la imagen de alguna nave
+Resultado esperado
+Se carga la pantalla de información de nave sin errores de imagen, y el texto está bien escrito.
+Resultado Real
+La información referente a las magnitudes de las naves carece de unidades de medida
+Captura de pantalla
+  
+
+
+
+
+
+BUG caso de prueba Naves 1A y Naves 2.A
+Título: Imagen incorrecta de la TIE Fighter
+Tipo Visual
+Gravedad: Baja
+Ambiente:
+* Pc escritorio
+* Windows 10 pro
+* Google Chrome Version 130.0.6723.70
+Acción Realizada: 
+23. Acceder a la sección Naves de la aplicación web
+24.  Hacer clic en el botón “ver” debajo de la imagen de la nave de nombre “TIE Fighter”
+Resultado esperado
+Se carga la pantalla de información de nave sin errores de imagen y el texto está bien escrito
+Resultado Real
+La imagen que se carga corresponde a otra página dentro de la sección naves (Slave I). 
+Captura de pantalla
+
+
+  
+
+  
+
+
+
+
+
+
+
+BUG caso de prueba Naves 3.B
+Título: Faltan palabras en B-Wing
+Tipo Visual
+Gravedad: Baja
+Ambiente:
+* Pc escritorio
+* Windows 10 pro
+* Google Chrome Version 130.0.6723.70
+Acción Realizada: 
+25. Acceder a la sección Naves de la aplicación web
+26.  Hacer clic en el botón “ver” debajo de la imagen de la nave de nombre “B-Wing”
+Resultado esperado
+Se carga la pantalla de información de nave sin errores de imagen y el texto está bien escrito
+Resultado Real
+En el cuarto renglón del párrafo que describe la nave de nombre “B-Wing” donde debería estar escrito “[...] láser, bombas de iones”  dice “[...] láser, iones”
+Captura de pantalla
+  
+
+
+
+BUG caso de prueba Películas 3
+Título: Faltan unidades de tiempo
+Tipo Visual
+Gravedad: Baja
+Ambiente:
+* Pc escritorio
+* Windows 10 pro
+* Google Chrome Version 130.0.6723.70
+
+
+Acción Realizada: 
+27. Acceder a la sección películas de la aplicación web
+28.  Hacer clic en el botón “ver” debajo de la imagen de 
+Resultado esperado
+Se carga la pantalla de información de la nave sin errores de imagen y el texto está bien escrito.
+Resultado Real
+La duración de las películas carece de unidades de tiempo. 
+Captura de pantalla
+  
+
+
+
+BUG caso de prueba Nosotros 3
+Título: Múltiples problemas de escritura
+Tipo Visual
+Gravedad: Baja
+Ambiente:
+* Pc escritorio
+* Windows 10 pro
+* Google Chrome Version 130.0.6723.70
+Acción Realizada: 
+29. Acceder a la sección Nosotros de la aplicación web
+Resultado esperado
+Se carga la pantalla de información de Nosotros sin errores de imagen y el texto está bien escrito.
+
+
+Resultado Real
+Se carga la pagina con varios errores de tipografía en lo descripción de los realizadores de la aplicación web, a enumerar:
+1. Está escrito “entusiaste” en lugar de “entusiasta”
+2. Las siglas de AMdelCO no están con mayúsculas en las letras correctas
+3. Falta la palabra “podrás” entre la palabra “donde” de la cuarta línea y la palabra “acceder” del quinto renglón.  
+Captura de pantalla

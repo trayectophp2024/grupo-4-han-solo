@@ -33,10 +33,10 @@ $producto = $productos[0] ?? NULL
                         <p class="card-text"><?= $producto['Descripcion'] ?></p>
                         <p class="card-text fs-5">Tipo : <?= $producto['Tipo'] ?></p>
                         <p class="card-text fs-6">Fabricante : <?= $producto['Fabricante'] ?></p>
-                        <p class="card-text fs-6">Longitud : <?= $producto['Longitud'] ?></p>
-                        <p class="card-text fs-7">Velocidad Maxima: <?= $producto['Velocidad_Maxima'] ?></p>
+                        <p class="card-text fs-6">Longitud : <?= $producto['Longitud'] ?> mts</p>
+                        <p class="card-text fs-7">Velocidad Maxima: <?= $producto['Velocidad_Maxima'] ?> km/h</p>
                         <p class="card-text fs-4">Armamento : <?= $producto['Armamento'] ?></p>
-                        <p class="card-text fs-4">Capcidad : <?= $producto['Capacidad'] ?></p>
+                        <p class="card-text fs-4">Capacidad : <?= $producto['Capacidad'] ?> lugar/es</p>
 
                     </div>
                 </div>

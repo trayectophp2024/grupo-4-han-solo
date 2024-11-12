@@ -37,6 +37,14 @@ function listar_todo($coon,$tabla){
 /* busqueda */ 
  function buscar_productos($conn ,$termino_busqueda){
 
+    
+    $termino_busqueda = trim($termino_busqueda);
+
+    if (empty($termino_busqueda)) {
+        return [];
+    }
+
+
     //escapar el termino de busqueda para evitar inyecciones sql
 
     $termino_busqueda = $conn->real_escape_string($termino_busqueda);

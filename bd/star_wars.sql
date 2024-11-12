@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Servidor: 127.0.0.1
--- Tiempo de generación: 22-10-2024 a las 22:01:50
+-- Tiempo de generación: 12-11-2024 a las 20:09:36
 -- Versión del servidor: 10.4.32-MariaDB
 -- Versión de PHP: 8.2.12
 
@@ -20,6 +20,8 @@ SET time_zone = "+00:00";
 --
 -- Base de datos: `star wars`
 --
+CREATE DATABASE IF NOT EXISTS `star wars` DEFAULT CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci;
+USE `star wars`;
 
 -- --------------------------------------------------------
 
@@ -47,11 +49,11 @@ CREATE TABLE `naves` (
 INSERT INTO `naves` (`id`, `Nombre`, `Descripcion`, `Tipo`, `Fabricante`, `Longitud`, `Velocidad_Maxima`, `Armamento`, `Capacidad`, `Imagen`) VALUES
 (1, 'Millennium Falcon', 'El Millennium Falcon es una nave Corelliana modificada, famosa por su velocidad y maniobrabilidad. Piloteada por Han Solo y Chewbacca, esta nave ha jugado un papel crucial en muchas de las principales batallas de la Guerra Civil Galáctica, incluyendo la destrucción de ambas Estrellas de la Muerte. Con su hipermotor mejorado y cañones láser dobles, es una de las naves más rápidas y versátiles de la galaxia.', 'Carguero ligero YT-1300', 'Corellian Engineering Corporation', 34.75, 1050, 'Cañones láser', 6, 'falcon.webp'),
 (2, 'X-Wing ', 'El X-Wing  es el principal caza estelar de la Alianza Rebelde, conocido por su forma de ala en X y su capacidad de operar en casi cualquier entorno. Equipado con cuatro cañones láser y torpedos de protones, el X-Wing es altamente maniobrable y ha sido instrumental en muchas victorias rebeldes, incluyendo la Batalla de Yavin donde destruyó la primera Estrella de la Muerte.', 'Caza estelar', 'Incom Corporation', 12.50, 1050, 'Cañones láser', 1, 'X-Wing.webp'),
-(3, 'TIE Fighter', 'El TIE Fighter es el caza estelar más común del Imperio Galáctico. Su diseño distintivo, con paneles solares hexagonales y un cockpit central, lo hace fácilmente reconocible. Aunque carece de escudos y es vulnerable en combate, su velocidad y producción en masa lo convierten en una herramienta efectiva para mantener el control imperial sobre la galaxia.', 'Caza estelar', 'Sienar Fleet Systems', 6.30, 1200, 'Cañones láser', 1, 'slave1.jpg'),
+(3, 'TIE Fighter', 'El TIE Fighter es el caza estelar más común del Imperio Galáctico. Su diseño distintivo, con paneles solares hexagonales y un cockpit central, lo hace fácilmente reconocible. Aunque carece de escudos y es vulnerable en combate, su velocidad y producción en masa lo convierten en una herramienta efectiva para mantener el control imperial sobre la galaxia.', 'Caza estelar', 'Sienar Fleet Systems', 6.30, 1200, 'Cañones láser', 1, 'tie.jpeg'),
 (4, 'Slave I', 'Slave I es la nave personal de Boba Fett, un cazarrecompensas notorio. Originalmente diseñada como una nave patrullera, ha sido modificada con armamento pesado y equipos de rastreo avanzados. Su diseño único le permite moverse en cualquier dirección durante el vuelo, y ha sido utilizada en numerosas misiones peligrosas por su dueño.', 'Nave de patrulla clase Firespray-31', 'Kuat Systems Engineering', 21.50, 1000, 'Misiles', 1, 'slave1.jpg'),
 (5, 'Imperial Star Destroyer', 'El Imperial Star Destroyer es la columna vertebral de la flota del Imperio Galáctico. Estas enormes naves de guerra son capaces de llevar a cabo ataques planetarios y enfrentarse a flotas enteras. Armados con turbolásers y capaces de transportar tropas, cazas TIE y otros vehículos, los Destructores Estelares representan el poderío militar del Imperio.', 'Crucero de guerra', 'Kuat Drive Yards', 1600.50, 975, 'Rayos tractores', 47000, 'imperial.jpg'),
 (6, 'A-Wing', 'El A-Wing es uno de los cazas estelares más rápidos de la galaxia, utilizado por la Alianza Rebelde para misiones de intercepción y ataques rápidos. Su diseño aerodinámico y sus potentes motores lo hacen altamente maniobrable, aunque su armamento y blindaje son limitados. Es especialmente efectivo en combates de alta velocidad.', 'Caza estelar', 'Alliance Underground Engineering', 9.60, 1300, 'Cañones láser', 1, 'a-wing.jfif'),
-(7, 'B-Wing', 'El B-Wing es un caza-bombardero avanzado utilizado por la Alianza Rebelde. Diseñado para atacar grandes naves de guerra, está equipado con cañones láser, iones y torpedos de protones. Su diseño inusual, con un ala principal que gira alrededor del cockpit, le da una ventaja táctica única en combate.', 'Caza-bombardero', 'Slayn & Korpil', 16.90, 950, 'Torpedos de protones', 1, 'b-wing.webp'),
+(7, 'B-Wing', 'El B-Wing es un caza-bombardero avanzado utilizado por la Alianza Rebelde. Diseñado para atacar grandes naves de guerra, está equipado con cañones láser,bombas de iones y torpedos de protones. Su diseño inusual, con un ala principal que gira alrededor del cockpit, le da una ventaja táctica única en combate.', 'Caza-bombardero', 'Slayn & Korpil', 16.90, 950, 'Torpedos de protones', 1, 'b-wing.webp'),
 (8, 'Y-Wing', 'El Y-Wing es un bombardero robusto y resistente utilizado por la Alianza Rebelde. Aunque más lento que otros cazas, es altamente efectivo en ataques contra grandes naves y estaciones espaciales. Equipado con cañones láser, torpedos de protones y bombas de iones, ha sido crucial en muchas operaciones de la Rebelión.', 'Bombardero', 'Koensayr Manufacturing', 16.90, 1000, 'Bombas de iones', 2, 'Y-Wing.webp'),
 (9, 'TIE Interceptor', 'El TIE Interceptor es una variante mejorada del TIE Fighter, diseñada para ser más rápida y mortal. Con sus alas en forma de cuchilla y cañones láser adicionales, el Interceptor es una de las naves más temidas en la flota imperial. Su velocidad superior le permite superar a la mayoría de los cazas rebeldes en combate.', 'Caza estelar', 'Sienar Fleet Systems', 9.60, 1250, 'Cañones láser cuádruples', 1, 'tie-intercep.webp'),
 (10, 'Naboo N-1 Starfighter', 'El N-1 Starfighter es un caza estelar utilizado por la fuerza de defensa de Naboo. Con su diseño elegante y armamento eficiente, ha demostrado ser eficaz tanto en combates espaciales como en la defensa planetaria. Esta nave fue utilizada notablemente durante la Batalla de Naboo, donde jugó un papel importante en la victoria sobre la Federación de Comercio.', 'Caza estelar', 'Theed Palace Space Vessel Engineering Corps', 11.00, 1100, 'Cañones láser', 1, 'naboo.webp');
